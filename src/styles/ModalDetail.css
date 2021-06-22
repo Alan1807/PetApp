@@ -1,0 +1,56 @@
+.modal-background {
+    position: fixed!important;
+    height: 100%!important;
+    width: 100%!important;
+    background-color: #000000c7;
+    z-index: 2;
+}
+
+.modal-detail {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.modal-img {
+    max-width:100%!important;
+    max-height:100%!important;
+    height: 300px!important;
+}
+
+.female-icon {
+    color: palevioletred!important;
+}
+
+.name-detail {
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.size-detail h6 {
+    font-weight: bold;
+    color: #000082;
+    opacity: 0.7;
+}
+
+.size-detail span {
+    opacity: 0.5;
+}
+
+.size-detail p {
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.modal-detail-footer {
+    background-color: #000082;
+    color: whitesmoke;
+}
+
+.modal-detail-close {
+    position: absolute;
+    z-index: 3;
+    padding-top: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    left: 95%;
+}

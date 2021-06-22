@@ -1,0 +1,20 @@
+.item-name {
+    font-weight: bold!important;
+    margin-bottom: 0px;
+}
+
+.item-age {
+    font-weight: lighter!important;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.item-status {
+    font-size: 12px!important;
+    font-weight: bold;
+    color: green;
+}
+
+.female-icon {
+    color: palevioletred!important;
+}
