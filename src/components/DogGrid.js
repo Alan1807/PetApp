@@ -9,10 +9,17 @@ export const DogGrid = ( { petName, petType, petGender, setShowModalDetail } ) =
     const { data: dogs, loading } = useFetchDogs(page, petName, petType, petGender);
 
     return (
-        <div>
-            { loading && <h3>Loading...</h3> }
+        <div className="h-75">
+            { 
+                loading && 
+                <div className="text-center h-100 d-flex align-items-center justify-content-center">
+                    <div class="spinner-grow text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div> 
+            }
             <div className="container-fluid">
-                <div className="card-grid d-flex d-flex-row justify-content-center">
+                <div className="card-grid row justify-content-center">
                     {
                         dogs.map( (dog) => (
                             <DogGridItem key={ dog.id } setShowModalDetail={ setShowModalDetail } { ...dog } />

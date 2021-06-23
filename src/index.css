@@ -3,6 +3,11 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.principal {
+  position: absolute!important;
+  height: 100%!important;
+}
+
 .card-grid {
   display: flex;
   flex-direction: row;
@@ -23,5 +28,15 @@ body {
 }
 
 .card img {
-  max-height: 170px;
+  max-height: 232px; /*199px;*/
+  width: auto!important;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.spinner-grow {
+  height: 5rem;
+  width: 5rem;
 }

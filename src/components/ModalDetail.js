@@ -100,11 +100,7 @@ export const ModalDetail = ({ petId, setShowModalDetail }) => {
                     </div>
                 </div>
                 <div className="modal-detail-footer pb-3">
-                    <div className="row">
-                        <div>
-                            {/*<ReactSVG src="../img/footer_modal.svg" />*/}
-                            <img src={ pruebaSVG } alt="prueba" />
-                        </div>
+                    <div className="row">                        
                         <div className="col-12 pl-4 ml-1 pt-2">
                             <h5>Contacto</h5>
                         </div>                        

@@ -3,6 +3,10 @@
     margin-bottom: 0px;
 }
 
+.item-desc {
+    font-size: 14px;
+}
+
 .item-age {
     font-weight: lighter!important;
     font-style: italic;
@@ -18,3 +22,27 @@
 .female-icon {
     color: palevioletred!important;
 }
+
+.card {
+    margin: 10px!important;    
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-img-container {
+    min-height: 92px;
+    background-color: #343a409e;
+}
+
+.card-desc-container {
+    min-height: 92px;
+}
+
+.cut-text { 
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 160px;
+    white-space: nowrap;
+  }

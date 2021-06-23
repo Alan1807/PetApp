@@ -8,10 +8,10 @@ export const CarrouselImage = ({ photo, index }) => {
             {
                 index === 0 ?
                 <div className="carousel-item active">
-                    <img className="d-block w-100 modal-img" src={ photo } />
+                    <img className="d-block modal-img" src={ photo } />
                 </div> :
                 <div className="carousel-item">
-                    <img className="d-block w-100 modal-img" src={ photo } />
+                    <img className="d-block modal-img" src={ photo } />
                 </div>
             }
             

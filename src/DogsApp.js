@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { DogGrid } from './components/DogGrid';
 import { SearchDog } from './components/SearchDog';
 import { ModalDetail } from './components/ModalDetail';
+import { NavigationBar } from './components/NavigationBar';
+import { SideBar } from './components/SideBar';
 
 export const DogsApp = () => {
 
@@ -27,11 +29,14 @@ export const DogsApp = () => {
                 !!showModalDetail.showModal && <ModalDetail petId={ petId } setShowModalDetail={ setShowModalDetail } /> 
             }
 
-            <div className="container-fluid">
-                <h1>Dogs App</h1>
-                <hr />
-                <SearchDog setPetFilters={ setPetFilters } />
-                <DogGrid petName={ name } petType={ type } petGender={ gender } setShowModalDetail={ setShowModalDetail } />
+            <div className="container-fluid p-0 principal">
+                <NavigationBar />
+                <SideBar setShowModalDetail={ setShowModalDetail } />
+                {/* <SearchDog setPetFilters={ setPetFilters } />
+                <DogGrid petName={ name } 
+                         petType={ type } 
+                         petGender={ gender } 
+                         setShowModalDetail={ setShowModalDetail } /> */}
             </div>
             
         </div>

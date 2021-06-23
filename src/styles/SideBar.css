@@ -1,0 +1,67 @@
+.fill-window {
+    height: 100vh;
+}
+
+.side-bar {
+    background-color: #343a40!important;
+    /*width: 210px;*/
+    width: 56px;
+    position: relative;
+}
+
+.side-bar-open {
+    /*width: 210px;*/
+    background-color: #343a40!important;
+    animation-name: open-side-bar;
+    animation-duration: 0.5s;
+}
+
+.side-bar-close {
+    /*width: 210px;*/
+    background-color: #343a40!important;
+    animation-name: close-side-bar;
+    animation-duration: 0.5s;
+}
+
+@keyframes open-side-bar {
+    from { width: 56px; }
+    to { width: 210px; }
+}
+
+@keyframes close-side-bar {
+    from { width: 210px; }
+    to { width: 56px; }
+}
+
+label {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fadeIn {
+    /* animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; */
+
+    -webkit-animation: fadeIn 0.7s forwards; /* for less modern browsers */
+    animation: fadeIn 0.7s forwards;
+}
+
+.fadeOut {
+    /* animation-name: fadeOut;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; */
+
+    -webkit-animation: fadeOut 1.5s forwards!important; /* for less modern browsers */
+    animation: fadeOut 1.5s forwards!important;
+}
